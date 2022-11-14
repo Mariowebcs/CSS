@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #2b2b2b;
+  --hover-effect: #2b2bb2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  text-align: center;
+}
+
+.side-nav {
+  display: flex;
+  width: 12.5rem;
+  height: 100vh;
+  flex-direction: column;
+  background: rgb(236, 235, 235);
+}
+
+.flex-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  flex: 1;
+  align-self: center;
+  transition: 0.3s;
+}
+
+.flex-link:hover,
+.flex-link:focus {
+  color: var(--hover-effect);
+}
+
+.logo {
+  align-self: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  align-self: center;
+}
