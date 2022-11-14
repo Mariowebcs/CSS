@@ -37,7 +37,14 @@ body {
 
 .logo {
   align-self: center;
-  margin: 2rem 0 2rem 0;
+  font-size: 16px;
+}
+
+.container{
+  padding: 1rem;
+  background: gray;
+  align-self: center;
+  margin: 2rem;
 }
 
 .avatar {
