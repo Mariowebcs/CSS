@@ -1,0 +1,85 @@
+:root {
+  --bg-color: #def5e5;
+  --accent-color: hsl(19, 93%, 27%);
+  --btn-card: #00abb3;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"); */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+}
+
+h2 {
+  font-weight: 900;
+}
+/* LAYOUT */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  margin: 1rem auto;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.3rem;
+}
+
+.card-header {
+  background-image: url(web-dev.jpg);
+  background-color: var(--accent-color);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: cover;
+  color: #fff;
+  padding: 2.5rem;
+  border-radius: 0.3rem;
+  height: 20vh;
+}
+
+.card-body,
+.card-footer {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.card-body h2 {
+  color: var(--accent-color);
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0.2rem;
+  background: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-accent {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  background: #fff;
+}
+
+.btn:hover,
+.btn:focus {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+/* RESPONSIVE EXCEPTION */
+@media (max-width: 968px) {
+  .card-header {
+    height: 8rem;
+  }
+  .card-body {
+    height: 16rem;
+  }
+}
