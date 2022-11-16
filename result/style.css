@@ -1,0 +1,63 @@
+:root {
+  --standard-color: rgb(233, 243, 246);
+  --special-color: rgb(166, 182, 195);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.grid-container {
+  font-weight: 600;
+  margin: 2rem auto;
+  max-width: 20rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border-radius: 0.3rem;
+}
+
+.grid-container > * {
+  font-size: 18px;
+}
+
+.item {
+  background: var(--standard-color);
+  padding: 0.65rem;
+  border: 1px solid black;
+}
+
+.zero {
+  border-radius: 0 0 0 0.4rem;
+}
+
+/*ID*/
+#special {
+  background: var(--special-color);
+}
+
+#special-head {
+  background: rgb(63, 73, 79);
+  color: #fff;
+  text-align: right;
+  grid-area: 1/1 / 1/5;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+#equal {
+  background: rgb(255, 110, 110);
+  grid-area: 3 / 4 / 7 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0.4rem 0;
+}
