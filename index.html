@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav class="head-nav">
+      <img id="mobile" src="menu.png" alt="" />
+      <div class="nav-logo">
+        <h2>Navbar</h2>
+      </div>
+      <div class="link-list">
+        <ul>
+          <li><a href="#" class="link-item">Home</a></li>
+          <li><a href="#" class="link-item">Link</a></li>
+        </ul>
+      </div>
+      <div class="dp-btd">
+        <div class="select">
+          <select name="selected" id="nav-select">
+            <option value="dropdown">Dropdown</option>
+            <option value="fullstack">Fullstack</option>
+            <option value="java">Java</option>
+            <option value="android">Android</option>
+            <option value="salesforce">Salesforce</option>
+          </select>
+        </div>
+      </div>
+      <button disabled class="bt-dis">Disabled</button>
+      <div class="search-container">
+        <input
+          class="src-inp"
+          type="search"
+          name="key"
+          id="search-input"
+          placeholder=" Search"
+        />
+        <button class="src-btn">Search</button>
+      </div>
+    </nav>
+  </body>
+</html>
